@@ -1,0 +1,31 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "adept_nether",
+  "result": {
+    "item": "goety_aether:solar_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:blazing_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:hellfire_stone"
+    },
+    {
+      "item": "aether:hellfire_stone"
+    },
+    {
+      "item": "goety:rampaging_axe"
+    },
+    {
+      "item": "goety:forbidden_piece"
+    },
+    {
+      "item": "aether:flaming_sword"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

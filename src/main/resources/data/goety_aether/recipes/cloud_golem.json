@@ -1,0 +1,54 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:summon_tamed",
+  "research": "mistral",
+  "craftType": "sky",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "legendary_monsters:air_rune"
+  },
+  "ingredients": [
+    {
+      "item": "goety:cyclone_focus"
+    },
+    {
+      "item": "goety:thunderstorm_focus"
+    },
+    {
+      "item": "goety:discharge_focus"
+    },
+    {
+      "item": "goety:bolting_focus"
+    },
+    {
+      "item": "goety_aether:cloud_falling_focus"
+    },
+    {
+      "item": "aether:aerogel"
+    },
+    {
+      "item": "goety:forbidden_fragment"
+    },
+    {
+      "item": "legendary_monsters:cloud_rod"
+    },
+    {
+      "item": "legendary_monsters:eye_of_air"
+    },
+    {
+      "item": "aether:cold_aercloud"
+    }
+  ],
+  "soulCost": 20,
+  "duration": 30,
+  "entity_to_summon": "goety_aether:cloud_golem",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ]
+}

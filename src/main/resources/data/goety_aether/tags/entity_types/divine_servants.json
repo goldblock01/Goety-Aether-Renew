@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "goety_aether:valkyrie_servant",
+    "goety:sprite",
+    {
+      "id": "goety_aether:cloud_golem",
+      "required": false
+    },
+    "goety_aether:slider",
+    "goety_aether:zombie_valkyrie_queen",
+    "goety_aether:sun_spirit_servant"
+  ]
+}

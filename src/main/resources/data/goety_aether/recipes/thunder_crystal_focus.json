@@ -1,0 +1,31 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "storm",
+  "result": {
+    "item": "goety_aether:thunder_crystal_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:electrocute_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:angelic_stone"
+    },
+    {
+      "item": "goety:lightning_focus"
+    },
+    {
+      "item": "aether:angelic_stone"
+    },
+    {
+      "item": "aether:lightning_knife"
+    },
+    {
+      "item": "aether:aerogel"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

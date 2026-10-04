@@ -1,0 +1,37 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:wind_crystal_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:wind_core"
+  },
+  "ingredients": [
+    {
+      "item": "deep_aether:nimbus_stone"
+    },
+    {
+      "item": "deep_aether:nimbus_stone"
+    },
+    {
+      "item": "goety:gale_fabric"
+    },
+    {
+      "item": "goety:gale_fabric"
+    },
+    {
+      "item": "goety:ominous_shard"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "deep_aether"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:summon_tamed",
+  "research": "bygone",
+  "craftType": "expert_nether",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:hunger_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether:phoenix_helmet"
+    },
+    {
+      "item": "aether:phoenix_chestplate"
+    },
+    {
+      "item": "aether:phoenix_gloves"
+    },
+    {
+      "item": "goety_aether:solar_focus"
+    },
+    {
+      "item": "goety_aether:ice_crystal_focus"
+    },
+    {
+      "item": "goety_aether:fire_crystal_focus"
+    },
+    {
+      "item": "goety:soul_ruby"
+    }
+  ],
+  "soulCost": 10,
+  "duration": 30,
+  "entity_to_summon": "goety_aether:sun_spirit_servant",
+  "entity_to_sacrifice": {
+    "tag": "goety_aether:fire_minions",
+    "display_name": "entity.aether.fire_minion"
+  }
+}

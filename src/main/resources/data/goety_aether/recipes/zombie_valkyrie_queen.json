@@ -1,0 +1,51 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:convert_complete_tamed",
+  "craftType": "necroturgy",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:hunger_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether:valkyrie_helmet"
+    },
+    {
+      "item": "aether:valkyrie_chestplate"
+    },
+    {
+      "item": "aether:valkyrie_gloves"
+    },
+    {
+      "item": "aether:holy_sword"
+    },
+    {
+      "item": "goety:forbidden_fragment"
+    },
+    {
+      "item": "goety_aether:thunder_crystal_focus"
+    },
+    {
+      "item": "goety:flame_capture"
+    },
+    {
+      "item": "goety:venomous_fang"
+    },
+    {
+      "item": "minecraft:zombie_head"
+    },
+    {
+      "item": "goety:raging_matter"
+    }
+  ],
+  "soulCost": 10,
+  "duration": 30,
+  "entity_to_convert": {
+    "tag": "goety:zombie_servants",
+    "display_name": "entity.minecraft.zombie"
+  },
+  "entity_to_convert_into": "goety_aether:zombie_valkyrie_queen"
+}

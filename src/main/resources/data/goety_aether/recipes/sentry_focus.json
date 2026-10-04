@@ -1,0 +1,34 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "geoturgy",
+  "result": {
+    "item": "goety_aether:sentry_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:animation_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether:sentry_stone"
+    },
+    {
+      "item": "aether:sentry_stone"
+    },
+    {
+      "item": "goety:smack_stone_focus"
+    },
+    {
+      "item": "aether:icestone"
+    },
+    {
+      "item": "aether:ambrosium_shard"
+    },
+    {
+      "item": "minecraft:tnt_minecart"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

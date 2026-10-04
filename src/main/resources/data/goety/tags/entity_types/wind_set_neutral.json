@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "goety_aether:golden_swet_servant",
+    "goety_aether:blue_swet_servant",
+    {
+      "id": "goety_aether:vanilla_swet_servant",
+      "required": false
+    },
+    {
+      "id": "goety_aether:dark_swet_servant",
+      "required": false
+    },
+    "goety_aether:zombie_valkyrie_queen",
+    "goety_aether:zephyr_servant",
+    {
+      "id": "goety_aether:hovering_hurricane_servant",
+      "required": false
+    },
+    {
+      "id": "goety_aether:cloud_golem",
+      "required": false
+    },
+    {
+      "id": "goety_aether:baby_zephyr_servant",
+      "required": false
+    },
+    {
+      "id": "goety_aether:eotsservant_segment",
+      "required": false
+    }
+  ]
+}

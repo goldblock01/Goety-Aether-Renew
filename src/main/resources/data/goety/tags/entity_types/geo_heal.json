@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "goety_aether:sentry_servant",
+    {
+      "id": "goety_aether:battle_sentry_servant",
+      "required": false
+    },
+    {
+      "id": "goety_aether:sentry_golem",
+      "required": false
+    },
+    {
+      "id": "goety_aether:tracking_golem",
+      "required": false
+    },
+    "goety_aether:slider",
+    {
+      "id": "goety_aether:sentry_guardian",
+      "required": false
+    }
+  ]
+}

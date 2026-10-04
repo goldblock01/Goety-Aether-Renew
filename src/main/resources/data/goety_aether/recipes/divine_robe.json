@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:divine_robe",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:wind_robe"
+  },
+  "ingredients": [
+    {
+      "item": "aether:ambrosium_block"
+    },
+    {
+      "item": "goety:savage_tooth"
+    },
+    {
+      "item": "goety:savage_tooth"
+    },
+    {
+      "item": "goety:spent_totem"
+    },
+    {
+      "item": "aether:valkyrie_cape"
+    },
+    {
+      "item": "aether:light_angelic_stone"
+    },
+    {
+      "item": "goety:magic_fabric"
+    },
+    {
+      "item": "goety:gale_fabric"
+    }
+  ],
+  "soulCost": 2,
+  "duration": 10
+}

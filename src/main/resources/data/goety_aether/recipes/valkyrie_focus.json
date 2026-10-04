@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:valkyrie_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:call_focus"
+  },
+  "ingredients": [
+    {
+      "item": "goety:wind_core"
+    },
+    {
+      "item": "goety:magic_fabric"
+    },
+    {
+      "item": "goety:magic_fabric"
+    },
+    {
+      "item": "minecraft:golden_sword"
+    },
+    {
+      "item": "aether:victory_medal"
+    },
+    {
+      "item": "aether:victory_medal"
+    },
+    {
+      "item": "goety:forbidden_piece"
+    },
+    {
+      "item": "goety:launch_focus"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

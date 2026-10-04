@@ -1,0 +1,37 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "storm",
+  "result": {
+    "item": "goety_aether:tempest_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety_aether:zephyr_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether_genesis:storm_aercloud"
+    },
+    {
+      "item": "aether_genesis:storm_aercloud"
+    },
+    {
+      "item": "goety:shocking_focus"
+    },
+    {
+      "item": "goety:ghost_fire_focus"
+    },
+    {
+      "item": "minecraft:copper_block"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aether_genesis"
+    }
+  ]
+}

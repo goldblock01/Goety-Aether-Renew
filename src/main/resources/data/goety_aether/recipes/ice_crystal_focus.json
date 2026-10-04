@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "frost",
+  "result": {
+    "item": "goety_aether:ice_crystal_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:ice_spike_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:ice_ring"
+    },
+    {
+      "item": "aether:ice_pendant"
+    },
+    {
+      "item": "goety:freezing_lamp"
+    },
+    {
+      "item": "goety:soul_light_focus"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

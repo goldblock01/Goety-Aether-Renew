@@ -1,0 +1,32 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:summon_tamed",
+  "craftType": "forge",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "aether:gravitite_helmet"
+  },
+  "ingredients": [
+    {
+      "item": "aether:sentry_stone"
+    },
+    {
+      "item": "aether:sentry_stone"
+    },
+    {
+      "item": "goety:burrowing_focus"
+    },
+    {
+      "item": "goety:trembling_focus"
+    },
+    {
+      "item": "goety:great_hammer"
+    }
+  ],
+  "soulCost": 6,
+  "duration": 30,
+  "entity_to_summon": "goety_aether:slider"
+}

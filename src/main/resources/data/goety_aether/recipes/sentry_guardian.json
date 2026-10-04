@@ -1,0 +1,38 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:summon_tamed",
+  "craftType": "forge",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety_aether:sentry_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether_genesis:divine_sentry_stone"
+    },
+    {
+      "item": "aether_genesis:divine_sentry_stone"
+    },
+    {
+      "item": "aether_genesis:holystone_furnace"
+    },
+    {
+      "item": "minecraft:observer"
+    },
+    {
+      "item": "goety:great_hammer"
+    }
+  ],
+  "soulCost": 5,
+  "duration": 30,
+  "entity_to_summon": "goety_aether:sentry_guardian",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aether_genesis"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "github.goldblock.goety_aether.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "goety_aether.refmap.json",
+  "mixins": [
+    "FireCrystalAccessor",
+    "IceCrystalAccessor",
+    "SliderMixin",
+    "SpriteSpellMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

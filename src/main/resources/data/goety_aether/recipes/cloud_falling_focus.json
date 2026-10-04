@@ -1,0 +1,43 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:cloud_falling_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:iceology_focus"
+  },
+  "ingredients": [
+    {
+      "item": "goety:soul_emerald"
+    },
+    {
+      "item": "aether:blue_aercloud"
+    },
+    {
+      "item": "aether:cold_aercloud"
+    },
+    {
+      "item": "legendary_monsters:cloud_rod"
+    },
+    {
+      "item": "legendary_monsters:cloud_rod"
+    },
+    {
+      "item": "legendary_monsters:chiseled_diorite"
+    },
+    {
+      "item": "goety:gale_fabric"
+    }
+  ],
+  "soulCost": 2,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "legendary_monsters"
+    }
+  ]
+}

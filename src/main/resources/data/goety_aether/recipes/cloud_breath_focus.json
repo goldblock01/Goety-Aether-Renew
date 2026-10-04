@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:cloud_breath_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:frost_breath_focus"
+  },
+  "ingredients": [
+    {
+      "item": "lost_aether_content:gale_stone"
+    },
+    {
+      "item": "lost_aether_content:gale_stone"
+    },
+    {
+      "item": "aether:white_apple"
+    },
+    {
+      "item": "aether:gravitite_gloves"
+    },
+    {
+      "item": "goety:gale_fabric"
+    },
+    {
+      "item": "goety:updraft_focus"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "lost_aether_content"
+    }
+  ]
+}

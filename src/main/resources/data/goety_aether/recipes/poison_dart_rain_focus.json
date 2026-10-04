@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "overgrown",
+  "result": {
+    "item": "goety_aether:poison_dart_rain_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:arrow_rain_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:poison_dart_shooter"
+    },
+    {
+      "item": "goety:overgrown_roots"
+    },
+    {
+      "item": "aether:poison_dart_shooter"
+    },
+    {
+      "item": "goety:overgrown_roots"
+    },
+    {
+      "item": "aether:poison_dart_shooter"
+    },
+    {
+      "item": "goety:overgrown_roots"
+    },
+    {
+      "item": "aether:poison_dart_shooter"
+    },
+    {
+      "item": "goety:overgrown_roots"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

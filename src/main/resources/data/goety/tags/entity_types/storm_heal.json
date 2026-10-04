@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "goety_aether:tempest_servant",
+      "required": false
+    }
+  ]
+}

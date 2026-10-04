@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:divine_crown",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:wind_crown"
+  },
+  "ingredients": [
+    {
+      "item": "aether:ambrosium_block"
+    },
+    {
+      "item": "aether:valkyrie_helmet"
+    },
+    {
+      "item": "goety:wind_core"
+    },
+    {
+      "item": "aether:ambrosium_torch"
+    },
+    {
+      "item": "aether:shield_of_repulsion"
+    },
+    {
+      "item": "aether:light_angelic_stone"
+    },
+    {
+      "item": "goety:magic_fabric"
+    },
+    {
+      "item": "goety:gale_fabric"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

@@ -1,0 +1,34 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:baby_zephyr_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety_aether:zephyr_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:cloud_staff"
+    },
+    {
+      "item": "aether:cold_parachute"
+    },
+    {
+      "item": "aether:aerogel"
+    },
+    {
+      "item": "deep_aether:aercloud_necklace"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "deep_aether"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "research": "mistral",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:superstorm_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "deep_aether:floaty_scarf"
+  },
+  "ingredients": [
+    {
+      "item": "deep_aether:chromatic_aercloud"
+    },
+    {
+      "item": "goety:jade_block"
+    },
+    {
+      "item": "goety:animation_core"
+    },
+    {
+      "item": "goety:thunderbolt_focus"
+    },
+    {
+      "item": "goety:updraft_focus"
+    },
+    {
+      "item": "goety_aether:baby_zephyr_focus"
+    },
+    {
+      "item": "goety_aether:wind_crystal_focus"
+    },
+    {
+      "item": "goety:aging_cream"
+    },
+    {
+      "item": "deep_aether:stormforged_helmet"
+    },
+    {
+      "item": "goety:gale_fabric"
+    }
+  ],
+  "soulCost": 3,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "deep_aether"
+    }
+  ]
+}

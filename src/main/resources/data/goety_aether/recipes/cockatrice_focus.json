@@ -1,0 +1,34 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "overgrown",
+  "result": {
+    "item": "goety_aether:cockatrice_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:animation_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether:poison_dart_shooter"
+    },
+    {
+      "item": "minecraft:saddle"
+    },
+    {
+      "tag": "aether:moa_eggs"
+    },
+    {
+      "tag": "aether:moa_eggs"
+    },
+    {
+      "item": "aether:skyroot_poison_bucket"
+    },
+    {
+      "item": "goety:poison_dart_focus"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

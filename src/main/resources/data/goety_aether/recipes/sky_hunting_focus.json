@@ -1,0 +1,25 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "overgrown",
+  "result": {
+    "item": "goety_aether:sky_hunter_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:hunting_focus"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone"
+    },
+    {
+      "item": "goety:poison_quill_seed"
+    },
+    {
+      "item": "goety:tall_skull"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

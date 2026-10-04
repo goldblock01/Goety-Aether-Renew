@@ -1,0 +1,26 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:summon_tamed",
+  "craftType": "sky",
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:call_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether:light_angelic_stone"
+    },
+    {
+      "item": "minecraft:golden_sword"
+    },
+    {
+      "item": "goety:magic_fabric"
+    }
+  ],
+  "soulCost": 3,
+  "duration": 5,
+  "entity_to_summon": "goety_aether:valkyrie_servant"
+}

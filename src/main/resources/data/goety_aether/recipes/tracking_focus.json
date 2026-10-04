@@ -1,0 +1,37 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "geoturgy",
+  "result": {
+    "item": "goety_aether:tracking_golem_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety_aether:battle_sentry_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether_genesis:divine_carved_stone"
+    },
+    {
+      "item": "aether_genesis:divine_carved_stone"
+    },
+    {
+      "item": "goety:targeting_monocle"
+    },
+    {
+      "item": "minecraft:soul_lantern"
+    },
+    {
+      "item": "aether:enchanted_dart_shooter"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aether_genesis"
+    }
+  ]
+}

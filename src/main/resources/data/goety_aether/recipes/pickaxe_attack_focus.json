@@ -1,0 +1,31 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "geoturgy",
+  "result": {
+    "item": "goety_aether:pickaxe_attack_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:weakening_focus"
+  },
+  "ingredients": [
+    {
+      "item": "goety:eerie_pickaxe"
+    },
+    {
+      "item": "aether:gravitite_pickaxe"
+    },
+    {
+      "item": "aether:zanite_pickaxe"
+    },
+    {
+      "item": "goety:magic_bolt_focus"
+    },
+    {
+      "item": "goety:ring_of_want"
+    }
+  ],
+  "soulCost": 2,
+  "duration": 10
+}
