@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:divine_favor_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:wind_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether:ambrosium_block"
+    },
+    {
+      "item": "aether:ambrosium_block"
+    },
+    {
+      "item": "aether:golden_amber"
+    },
+    {
+      "item": "aether:angelic_stone"
+    }
+  ],
+  "soulCost": 5,
+  "duration": 10
+}

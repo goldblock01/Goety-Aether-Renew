@@ -2,10 +2,13 @@ package github.goldblock.goety_aether;
 
 import com.Polarice3.Goety.api.magic.SpellType;
 import com.mojang.logging.LogUtils;
+import github.goldblock.goety_aether.common.init.ModBlockEntities;
+import github.goldblock.goety_aether.common.init.ModBlocks;
 import github.goldblock.goety_aether.common.init.ModCreativeTab;
 import github.goldblock.goety_aether.common.init.ModEffects;
 import github.goldblock.goety_aether.common.init.ModEntityTypes;
 import github.goldblock.goety_aether.common.init.ModItems;
+import github.goldblock.goety_aether.common.init.ModPlushies;
 import github.goldblock.goety_aether.common.init.ModAttributes;
 import github.goldblock.goety_aether.compat.deep_aether.DeepAetherCompatManager;
 import github.goldblock.goety_aether.compat.genesis.GenesisCompatManager;
@@ -37,6 +40,9 @@ public class GoetyAether {
 
         ModEntityTypes.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModPlushies.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeTab.register(modEventBus);
         ModEffects.register(modEventBus);
         ModAttributes.init();

@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:repel_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:telekinesis_focus"
+  },
+  "ingredients": [
+    {
+      "item": "deep_aether:green_squash_slice"
+    },
+    {
+      "item": "aether:white_apple"
+    },
+    {
+      "item": "deep_aether:skyjade_shield"
+    },
+    {
+      "item": "deep_aether:skyjade"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

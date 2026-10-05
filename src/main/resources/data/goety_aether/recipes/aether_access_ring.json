@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:aether_access_ring",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "aether_redux:ring_of_wisdom"
+  },
+  "ingredients": [
+    {
+      "item": "goety_aether:pickaxe_attack_focus"
+    },
+    {
+      "item": "aether:skyroot_remedy_bucket"
+    },
+    {
+      "item": "aether:gravitite_axe"
+    },
+    {
+      "item": "aether:gravitite_sword"
+    }
+  ],
+  "soulCost": 5,
+  "duration": 10
+}

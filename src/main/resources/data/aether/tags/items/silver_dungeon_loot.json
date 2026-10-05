@@ -1,0 +1,8 @@
+{
+    "replace":  false,
+    "values":  [
+                   "goety_aether:unbounded_water_bucket",
+                   "goety_aether:c_moon_focus",
+                   "goety_aether:zephyr_focus"
+               ]
+}

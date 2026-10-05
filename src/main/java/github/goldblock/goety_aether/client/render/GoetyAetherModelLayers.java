@@ -15,6 +15,8 @@ public class GoetyAetherModelLayers {
     public static final ModelLayerLocation BATTLE_SENTRY = register("battle_sentry");
     public static final ModelLayerLocation SENTRY_GOLEM = register("sentry_golem");
     public static final ModelLayerLocation HURRICANE_SERVANT = register("hurricane_servant");
+    public static final ModelLayerLocation VENOMITE_SERVANT = register("venomite_servant");
+    public static final ModelLayerLocation PLUSHIE = register("plushie");
 
     private static ModelLayerLocation register(String name) {
         return new ModelLayerLocation(new ResourceLocation(GoetyAether.MOD_ID, name), "main");

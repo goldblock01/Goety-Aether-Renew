@@ -1,0 +1,40 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "necroturgy",
+  "result": {
+    "item": "goety_aether:eternal_night_beacon",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:hunger_core"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:beacon"
+    },
+    {
+      "item": "goety:soul_light_focus"
+    },
+    {
+      "item": "aether:sun_altar"
+    },
+    {
+      "item": "goety_aether:c_moon_focus"
+    },
+    {
+      "item": "minecraft:oak_sapling"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "goety:pale_steel_ingot"
+    },
+    {
+      "item": "aether:aerogel"
+    }
+  ],
+  "soulCost": 3,
+  "duration": 10
+}

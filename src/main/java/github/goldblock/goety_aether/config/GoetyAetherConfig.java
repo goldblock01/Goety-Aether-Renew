@@ -100,6 +100,18 @@ public class GoetyAetherConfig {
     public static final ForgeConfigSpec.IntValue POISON_DART_RAIN_COST;
     public static final ForgeConfigSpec.IntValue POISON_DART_RAIN_CAST_DURATION;
     public static final ForgeConfigSpec.IntValue POISON_DART_RAIN_COOLDOWN;
+    public static final ForgeConfigSpec.IntValue DIVINE_FAVOR_FOCUS_COST;
+    public static final ForgeConfigSpec.IntValue DIVINE_FAVOR_FOCUS_CAST_DURATION;
+    public static final ForgeConfigSpec.IntValue DIVINE_FAVOR_FOCUS_COOLDOWN;
+    public static final ForgeConfigSpec.IntValue LEVITATION_FOCUS_COST;
+    public static final ForgeConfigSpec.IntValue LEVITATION_FOCUS_CAST_DURATION;
+    public static final ForgeConfigSpec.IntValue LEVITATION_FOCUS_COOLDOWN;
+    public static final ForgeConfigSpec.IntValue NEW_MOON_FOCUS_COST;
+    public static final ForgeConfigSpec.IntValue NEW_MOON_FOCUS_CAST_DURATION;
+    public static final ForgeConfigSpec.IntValue NEW_MOON_FOCUS_COOLDOWN;
+    public static final ForgeConfigSpec.IntValue REPEL_FOCUS_COST;
+    public static final ForgeConfigSpec.IntValue REPEL_FOCUS_CAST_DURATION;
+    public static final ForgeConfigSpec.IntValue REPEL_FOCUS_COOLDOWN;
 
     public static final ForgeConfigSpec.DoubleValue SENTRY_SERVANT_HEALTH;
     public static final ForgeConfigSpec.DoubleValue SENTRY_SERVANT_DAMAGE;
@@ -127,6 +139,10 @@ public class GoetyAetherConfig {
     public static final ForgeConfigSpec.DoubleValue BLUE_SWET_SERVANT_DAMAGE;
     public static final ForgeConfigSpec.DoubleValue VANILLA_SWET_SERVANT_HEALTH;
     public static final ForgeConfigSpec.DoubleValue VANILLA_SWET_SERVANT_DAMAGE;
+    public static final ForgeConfigSpec.DoubleValue BLIGHTBUNNY_SERVANT_HEALTH;
+    public static final ForgeConfigSpec.DoubleValue BLIGHTBUNNY_SERVANT_DAMAGE;
+    public static final ForgeConfigSpec.DoubleValue VENOMITE_SERVANT_HEALTH;
+    public static final ForgeConfigSpec.DoubleValue VENOMITE_SERVANT_DAMAGE;
     public static final ForgeConfigSpec.DoubleValue DARK_SWET_SERVANT_HEALTH;
     public static final ForgeConfigSpec.DoubleValue DARK_SWET_SERVANT_DAMAGE;
     public static final ForgeConfigSpec.DoubleValue ZEPHYR_SERVANT_HEALTH;
@@ -222,6 +238,18 @@ public class GoetyAetherConfig {
         POISON_DART_RAIN_COST = builder.comment("Poison Dart Rain Focus soul cost").defineInRange("poisonDartRainCost", 5, 1, 1000);
         POISON_DART_RAIN_CAST_DURATION = builder.comment("Poison Dart Rain Focus cast up duration").defineInRange("poisonDartRainCastDuration", 20, 1, 1200);
         POISON_DART_RAIN_COOLDOWN = builder.comment("Poison Dart Rain Focus cooldown").defineInRange("poisonDartRainCooldown", 400, 0, 72000);
+        DIVINE_FAVOR_FOCUS_COST = builder.comment("Divine Favor Focus soul cost").defineInRange("divineFavorFocusCost", 12, 1, 1000);
+        DIVINE_FAVOR_FOCUS_CAST_DURATION = builder.comment("Divine Favor Focus cast duration").defineInRange("divineFavorFocusCastDuration", 60, 0, 1200);
+        DIVINE_FAVOR_FOCUS_COOLDOWN = builder.comment("Divine Favor Focus cooldown").defineInRange("divineFavorFocusCooldown", 300, 0, 72000);
+        LEVITATION_FOCUS_COST = builder.comment("Levitation Focus soul cost").defineInRange("levitationFocusCost", 20, 1, 1000);
+        LEVITATION_FOCUS_CAST_DURATION = builder.comment("Levitation Focus cast duration").defineInRange("levitationFocusCastDuration", 100, 0, 1200);
+        LEVITATION_FOCUS_COOLDOWN = builder.comment("Levitation Focus cooldown").defineInRange("levitationFocusCooldown", 600, 0, 72000);
+        NEW_MOON_FOCUS_COST = builder.comment("New Moon Focus soul cost").defineInRange("newMoonFocusCost", 20, 1, 1000);
+        NEW_MOON_FOCUS_CAST_DURATION = builder.comment("New Moon Focus cast duration").defineInRange("newMoonFocusCastDuration", 140, 0, 1200);
+        NEW_MOON_FOCUS_COOLDOWN = builder.comment("New Moon Focus cooldown").defineInRange("newMoonFocusCooldown", 300, 0, 72000);
+        REPEL_FOCUS_COST = builder.comment("Repel Focus soul cost").defineInRange("repelFocusCost", 20, 1, 1000);
+        REPEL_FOCUS_CAST_DURATION = builder.comment("Repel Focus cast duration").defineInRange("repelFocusCastDuration", 140, 0, 1200);
+        REPEL_FOCUS_COOLDOWN = builder.comment("Repel Focus cooldown").defineInRange("repelFocusCooldown", 300, 0, 72000);
         builder.pop();
 
         builder.comment("Servant stats; set to 0 to use the built-in value").push("servants");
@@ -251,6 +279,10 @@ public class GoetyAetherConfig {
         BLUE_SWET_SERVANT_DAMAGE = builder.defineInRange("blueSwetServantDamage", 0.0D, 0.0D, 1024.0D);
         VANILLA_SWET_SERVANT_HEALTH = builder.defineInRange("vanillaSwetServantHealth", 0.0D, 0.0D, 1024.0D);
         VANILLA_SWET_SERVANT_DAMAGE = builder.defineInRange("vanillaSwetServantDamage", 0.0D, 0.0D, 1024.0D);
+        BLIGHTBUNNY_SERVANT_HEALTH = builder.defineInRange("blightbunnyServantHealth", 0.0D, 0.0D, 1024.0D);
+        BLIGHTBUNNY_SERVANT_DAMAGE = builder.defineInRange("blightbunnyServantDamage", 0.0D, 0.0D, 1024.0D);
+        VENOMITE_SERVANT_HEALTH = builder.defineInRange("venomiteServantHealth", 0.0D, 0.0D, 1024.0D);
+        VENOMITE_SERVANT_DAMAGE = builder.defineInRange("venomiteServantDamage", 0.0D, 0.0D, 1024.0D);
         DARK_SWET_SERVANT_HEALTH = builder.defineInRange("darkSwetServantHealth", 0.0D, 0.0D, 1024.0D);
         DARK_SWET_SERVANT_DAMAGE = builder.defineInRange("darkSwetServantDamage", 0.0D, 0.0D, 1024.0D);
         ZEPHYR_SERVANT_HEALTH = builder.defineInRange("zephyrServantHealth", 0.0D, 0.0D, 1024.0D);
@@ -336,6 +368,8 @@ public class GoetyAetherConfig {
             new ServantEntry(() -> GenesisCompatManager.SENTRY_GOLEM.get(), SENTRY_GOLEM_HEALTH, SENTRY_GOLEM_DAMAGE),
             new ServantEntry(() -> GenesisCompatManager.TEMPEST_SERVANT.get(), TEMPEST_SERVANT_HEALTH, TEMPEST_SERVANT_DAMAGE),
             new ServantEntry(() -> ReduxCompatManager.VANILLA_SWET_SERVANT.get(), VANILLA_SWET_SERVANT_HEALTH, VANILLA_SWET_SERVANT_DAMAGE),
+            new ServantEntry(() -> ReduxCompatManager.BLIGHTBUNNY_SERVANT.get(), BLIGHTBUNNY_SERVANT_HEALTH, BLIGHTBUNNY_SERVANT_DAMAGE),
+            new ServantEntry(() -> DeepAetherCompatManager.VENOMITE_SERVANT.get(), VENOMITE_SERVANT_HEALTH, VENOMITE_SERVANT_DAMAGE),
             new ServantEntry(() -> DeepAetherCompatManager.BABY_ZEPHYR_SERVANT.get(), BABY_ZEPHYR_SERVANT_HEALTH, BABY_ZEPHYR_SERVANT_DAMAGE),
             new ServantEntry(() -> DeepAetherCompatManager.EOTSS_CONTROLLER.get(), EOTS_CONTROLLER_HEALTH, EOTS_CONTROLLER_DAMAGE),
             new ServantEntry(() -> DeepAetherCompatManager.EOTSSERVANT_SEGMENT.get(), EOTS_SERVANT_SEGMENT_HEALTH, EOTS_SERVANT_SEGMENT_DAMAGE)

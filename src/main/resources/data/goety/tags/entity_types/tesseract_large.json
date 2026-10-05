@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "goety_aether:sun_spirit_servant",
+    {
+      "id": "goety_aether:eots_servant",
+      "required": false
+    }
+  ]
+}

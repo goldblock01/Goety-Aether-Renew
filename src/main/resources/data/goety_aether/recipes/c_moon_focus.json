@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:c_moon_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:telekinesis_focus"
+  },
+  "ingredients": [
+    {
+      "item": "aether_redux:airbound_cape"
+    },
+    {
+      "item": "aether:zanite_ring"
+    },
+    {
+      "item": "aether:zanite_pendant"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "soulCost": 1,
+  "duration": 10
+}

@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "goety_aether:levitation_focus",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "goety:mystic_core"
+  },
+  "ingredients": [
+    {
+      "item": "aether_redux:gravitite_ingot"
+    },
+    {
+      "item": "aether:gravitite_sword"
+    },
+    {
+      "item": "aether_redux:raw_gravitite"
+    },
+    {
+      "item": "goety:ectoplasm"
+    }
+  ],
+  "soulCost": 3,
+  "duration": 10
+}

@@ -30,8 +30,10 @@ public class ModCreativeTab {
             () -> GenesisCompatManager.TRACKING_GOLEM_SPAWN_EGG,
             () -> GenesisCompatManager.SENTRY_GOLEM_SPAWN_EGG,
             () -> ModItems.SLIDER_SPAWN_EGG,
+            () -> ReduxCompatManager.BLIGHTBUNNY_SERVANT_SPAWN_EGG,
             () -> GenesisCompatManager.SENTRY_GUARDIAN_SPAWN_EGG,
             () -> DeepAetherCompatManager.BABY_ZEPHYR_SERVANT_SPAWN_EGG,
+            () -> DeepAetherCompatManager.VENOMITE_SERVANT_SPAWN_EGG,
             () -> DeepAetherCompatManager.EOTSSERVANT_SPAWN_EGG,
             () -> ModItems.VALKYRIE_SERVANT_SPAWN_EGG,
             () -> ModItems.COCKATRICE_SERVANT_SPAWN_EGG,
@@ -68,6 +70,12 @@ public class ModCreativeTab {
                         placed.add(ModItems.ARKENZUS_CODEX.get());
                         output.accept(ModItems.SWOLLEN_SUN.get());
                         placed.add(ModItems.SWOLLEN_SUN.get());
+                        output.accept(ModItems.UNBOUNDED_WATER_BUCKET.get());
+                        placed.add(ModItems.UNBOUNDED_WATER_BUCKET.get());
+                        output.accept(ModItems.AETHER_ACCESS_RING.get());
+                        placed.add(ModItems.AETHER_ACCESS_RING.get());
+                        output.accept(ModBlocks.ETERNAL_NIGHT_BEACON_ITEM.get());
+                        placed.add(ModBlocks.ETERNAL_NIGHT_BEACON_ITEM.get());
                         output.accept(ModItems.SENTRY_FOCUS.get());
                         placed.add(ModItems.SENTRY_FOCUS.get());
                         output.accept(ModItems.BATTLE_SENTRY_FOCUS.get());
@@ -120,6 +128,14 @@ public class ModCreativeTab {
                         }
                         output.accept(ModItems.SOLAR_FOCUS.get());
                         placed.add(ModItems.SOLAR_FOCUS.get());
+                        output.accept(ModItems.DIVINE_FAVOR_FOCUS.get());
+                        placed.add(ModItems.DIVINE_FAVOR_FOCUS.get());
+                        output.accept(ModItems.LEVITATION_FOCUS.get());
+                        placed.add(ModItems.LEVITATION_FOCUS.get());
+                        output.accept(ModItems.NEW_MOON_FOCUS.get());
+                        placed.add(ModItems.NEW_MOON_FOCUS.get());
+                        output.accept(ModItems.REPEL_FOCUS.get());
+                        placed.add(ModItems.REPEL_FOCUS.get());
                         for (Supplier<RegistryObject<? extends Item>> eggSupplier : EGG_ORDER) {
                             RegistryObject<? extends Item> egg = eggSupplier.get();
                             if (egg != null && egg.isPresent()) {
@@ -132,6 +148,10 @@ public class ModCreativeTab {
                                 output.accept(entry.get());
                             }
                         });
+                        output.accept(ModPlushies.GOLDEN_PLUSHIE.get().asItem());
+                        placed.add(ModPlushies.GOLDEN_PLUSHIE.get().asItem());
+                        output.accept(ModPlushies.YOYEYE_PLUSHIE.get().asItem());
+                        placed.add(ModPlushies.YOYEYE_PLUSHIE.get().asItem());
                     })
                     .build());
 

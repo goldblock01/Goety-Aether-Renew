@@ -20,6 +20,10 @@ import github.goldblock.goety_aether.client.render.ValkyrieServantRenderer;
 import github.goldblock.goety_aether.client.render.WindCallerRenderer;
 import github.goldblock.goety_aether.client.render.ZephyrServantRenderer;
 import github.goldblock.goety_aether.client.render.ZombieValkyrieQueenServantRenderer;
+import github.goldblock.goety_aether.client.render.block.EternalNightBeaconRenderer;
+import github.goldblock.goety_aether.client.render.block.PlushieBlockEntityRenderer;
+import github.goldblock.goety_aether.client.render.model.PlushieModel;
+import github.goldblock.goety_aether.common.init.ModBlockEntities;
 import github.goldblock.goety_aether.common.init.ModEntityTypes;
 import github.goldblock.goety_aether.compat.deep_aether.client.DeepAetherCompatClient;
 import github.goldblock.goety_aether.compat.genesis.client.GenesisCompatClient;
@@ -32,12 +36,22 @@ import github.goldblock.goety_aether.compat.mod.AetherReduxCompat;
 import github.goldblock.goety_aether.compat.mod.LegendaryMonstersCompat;
 import github.goldblock.goety_aether.compat.redux.client.ReduxCompatClient;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.PathPackResources;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
+import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
+import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+
+import java.nio.file.Path;
 
 @EventBusSubscriber(modid = GoetyAether.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class ClientEvents {
@@ -77,12 +91,17 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntityTypes.THUNDER_CRYSTAL.get(),
                 (net.minecraft.client.renderer.entity.EntityRendererProvider<github.goldblock.goety_aether.common.entities.projectile.ThunderCrystal>) (net.minecraft.client.renderer.entity.EntityRendererProvider) com.aetherteam.aether.client.renderer.entity.ThunderCrystalRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.RAIN_POISON_DART.get(), RainPoisonDartRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.DIVINE_FAVOR_CLOUD.get(), net.minecraft.client.renderer.entity.NoopRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.NEW_MOON_ATTRACTOR.get(), net.minecraft.client.renderer.entity.NoopRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.REPEL_ATTRACTOR.get(), net.minecraft.client.renderer.entity.NoopRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.AECHOR_PLANT_SERVANT.get(), github.goldblock.goety_aether.client.render.AechorPlantServantRenderer::new);
         if (!AetherReduxCompat.isReduxLoaded()) {
             event.registerEntityRenderer(ModEntityTypes.PASSIVE_WHIRLWIND_SERVANT.get(), WhirlwindServantRenderer::new);
             event.registerEntityRenderer(ModEntityTypes.EVIL_WHIRLWIND_SERVANT.get(), WhirlwindServantRenderer::new);
         }
         event.registerEntityRenderer(ModEntityTypes.CREEPER_SERVANT.get(), CreeperServantRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.ETERNAL_NIGHT_BEACON.get(), EternalNightBeaconRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.PLUSHIE.get(), PlushieBlockEntityRenderer::new);
         if (AetherGenesisCompat.isGenesisLoaded()) {
             GenesisCompatClient.registerRenderers(event);
         }
@@ -106,8 +125,12 @@ public class ClientEvents {
         event.registerLayerDefinition(GoetyAetherModelLayers.EOTS_SEGMENT, github.goldblock.goety_aether.client.render.EOTSServantSegmentModel::createBodyLayer);
         event.registerLayerDefinition(GoetyAetherModelLayers.EOTS_CONTROLLER, github.goldblock.goety_aether.client.render.EOTSSControllerModel::createBodyLayer);
         event.registerLayerDefinition(GoetyAetherModelLayers.BABY_ZEPHYR, github.goldblock.goety_aether.client.render.BabyZephyrServantModel::createBodyLayer);
+        event.registerLayerDefinition(GoetyAetherModelLayers.PLUSHIE, PlushieModel::createBodyLayer);
         if (AetherGenesisCompat.isGenesisLoaded()) {
             GenesisCompatClient.registerLayerDefinitions(event);
+        }
+        if (AetherDeepAetherCompat.isDeepAetherLoaded()) {
+            DeepAetherCompatClient.registerLayerDefinitions(event);
         }
         if (LegendaryMonstersCompat.isLegendaryMonstersLoaded()) {
             LegendaryMonstersCompatClient.registerLayerDefinitions(event);
@@ -117,5 +140,25 @@ public class ClientEvents {
     @SubscribeEvent
     public static void registerOverlays(RegisterGuiOverlaysEvent event) {
         event.registerAboveAll("cockatrice_jumps", github.goldblock.goety_aether.client.gui.CockatriceJumpsOverlay.COCKATRICE_JUMPS);
+    }
+
+    @SubscribeEvent
+    public static void addEinheriValkyrieQueenPack(AddPackFindersEvent event) {
+        if (event.getPackType() == PackType.CLIENT_RESOURCES) {
+            Path resourcePath = ModList.get().getModFileById(GoetyAether.MOD_ID).getFile().findResource(new String[]{"packs/client/einheri_valkyrie_queen"});
+            Pack.Info info = new Pack.Info(Component.translatable("resourcePack.goety_aether.einheri_valkyrie_queen.description"), 15, FeatureFlagSet.of());
+            Pack pack = Pack.create(
+                    "builtin/client/einheri_valkyrie_queen",
+                    Component.translatable("resourcePack.goety_aether.einheri_valkyrie_queen.name"),
+                    false,
+                    path -> new PathPackResources(path, resourcePath, true),
+                    info,
+                    PackType.CLIENT_RESOURCES,
+                    Pack.Position.TOP,
+                    false,
+                    PackSource.BUILT_IN
+            );
+            event.addRepositorySource(consumer -> consumer.accept(pack));
+        }
     }
 }

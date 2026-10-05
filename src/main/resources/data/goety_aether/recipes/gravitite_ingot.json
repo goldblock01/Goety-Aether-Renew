@@ -1,0 +1,28 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "craftType": "sky",
+  "result": {
+    "item": "aether_redux:gravitite_ingot",
+    "count": 1
+  },
+  "activation_item": {
+    "item": "minecraft:diamond"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    {
+      "item": "aether:icestone"
+    },
+    {
+      "item": "aether:holystone"
+    },
+    {
+      "item": "aether:zanite_gemstone"
+    }
+  ],
+  "soulCost": 2,
+  "duration": 2
+}

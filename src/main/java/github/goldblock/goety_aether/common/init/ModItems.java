@@ -2,7 +2,10 @@ package github.goldblock.goety_aether.common.init;
 
 import com.Polarice3.Goety.common.items.ServantSpawnEggItem;
 import com.Polarice3.Goety.common.items.magic.MagicFocus;
+import com.aetherteam.aether.item.AetherItems;
 import github.goldblock.goety_aether.GoetyAether;
+import github.goldblock.goety_aether.common.items.bucket.UnboundedWaterBucketItem;
+import github.goldblock.goety_aether.common.items.curios.AetherAccessRingItem;
 import github.goldblock.goety_aether.common.items.divine.DivineCrownItem;
 import github.goldblock.goety_aether.common.items.revive.ArkenzusCodex;
 import github.goldblock.goety_aether.common.items.revive.ReviveServantItem;
@@ -21,6 +24,10 @@ import github.goldblock.goety_aether.common.magic.spells.SolarFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.ThunderCrystalSpell;
 import github.goldblock.goety_aether.common.magic.spells.TrackingGolemFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.CockatriceFocusSpell;
+import github.goldblock.goety_aether.common.magic.spells.DivineFavorSpell;
+import github.goldblock.goety_aether.common.magic.spells.LevitationSpell;
+import github.goldblock.goety_aether.common.magic.spells.NewMoonSpell;
+import github.goldblock.goety_aether.common.magic.spells.RepelSpell;
 import github.goldblock.goety_aether.common.magic.spells.ValkyrieFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.WindCrystalSpell;
 import github.goldblock.goety_aether.common.magic.spells.ZephyrFocusSpell;
@@ -70,6 +77,18 @@ public class ModItems {
     public static final RegistryObject<MagicFocus> POISON_DART_RAIN_FOCUS = ITEMS.register("poison_dart_rain_focus",
             () -> new MagicFocus(new PoisonDartRainSpell()));
 
+    public static final RegistryObject<MagicFocus> DIVINE_FAVOR_FOCUS = ITEMS.register("divine_favor_focus",
+            () -> new MagicFocus(new DivineFavorSpell()));
+
+    public static final RegistryObject<MagicFocus> LEVITATION_FOCUS = ITEMS.register("levitation_focus",
+            () -> new MagicFocus(new LevitationSpell()));
+
+    public static final RegistryObject<MagicFocus> NEW_MOON_FOCUS = ITEMS.register("c_moon_focus",
+            () -> new MagicFocus(new NewMoonSpell()));
+
+    public static final RegistryObject<MagicFocus> REPEL_FOCUS = ITEMS.register("repel_focus",
+            () -> new MagicFocus(new RepelSpell()));
+
     public static final RegistryObject<ServantSpawnEggItem> COCKATRICE_SERVANT_SPAWN_EGG = ITEMS.register("cockatrice_servant_spawn_egg",
             () -> new ServantSpawnEggItem(ModEntityTypes.COCKATRICE_SERVANT, 7123292, 7100317, new Item.Properties()));
 
@@ -81,6 +100,12 @@ public class ModItems {
 
     public static final RegistryObject<ReviveServantItem> SWOLLEN_SUN = ITEMS.register("swollen_sun",
             () -> new SwollenSun());
+
+    public static final RegistryObject<UnboundedWaterBucketItem> UNBOUNDED_WATER_BUCKET = ITEMS.register("unbounded_water_bucket",
+            () -> new UnboundedWaterBucketItem(new Item.Properties().stacksTo(1).rarity(AetherItems.AETHER_LOOT)));
+
+    public static final RegistryObject<AetherAccessRingItem> AETHER_ACCESS_RING = ITEMS.register("aether_access_ring",
+            () -> new AetherAccessRingItem());
 
     public static final RegistryObject<DivineCrownItem> DIVINE_CROWN = ITEMS.register("divine_crown",
             () -> new DivineCrownItem());

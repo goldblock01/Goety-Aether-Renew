@@ -33,6 +33,9 @@ import github.goldblock.goety_aether.common.entities.projectile.IceCrystal;
 import github.goldblock.goety_aether.common.entities.projectile.ThunderCrystal;
 import github.goldblock.goety_aether.common.entities.projectile.RainPoisonDart;
 import github.goldblock.goety_aether.common.entities.projectile.SentryBomb;
+import github.goldblock.goety_aether.common.entities.util.DivineFavorCloud;
+import github.goldblock.goety_aether.common.entities.util.NewMoonAttractor;
+import github.goldblock.goety_aether.common.entities.util.RepelAttractor;
 import github.goldblock.goety_aether.compat.deep_aether.DeepAetherCompatManager;
 import github.goldblock.goety_aether.compat.genesis.GenesisCompatManager;
 import github.goldblock.goety_aether.compat.legendary_monsters.LegendaryMonstersCompatManager;
@@ -94,6 +97,15 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<RainPoisonDart>> RAIN_POISON_DART = ENTITY_TYPES.register("rain_poison_dart",
             () -> EntityType.Builder.<RainPoisonDart>of(RainPoisonDart::new, MobCategory.MISC).sized(0.5F, 0.5F).clientTrackingRange(4).updateInterval(10).build("rain_poison_dart"));
+
+    public static final RegistryObject<EntityType<DivineFavorCloud>> DIVINE_FAVOR_CLOUD = ENTITY_TYPES.register("divine_favor_cloud",
+            () -> EntityType.Builder.<DivineFavorCloud>of(DivineFavorCloud::new, MobCategory.MISC).sized(10.0F, 0.5F).clientTrackingRange(10).updateInterval(10).build("divine_favor_cloud"));
+
+    public static final RegistryObject<EntityType<NewMoonAttractor>> NEW_MOON_ATTRACTOR = ENTITY_TYPES.register("new_moon_attractor",
+            () -> EntityType.Builder.<NewMoonAttractor>of(NewMoonAttractor::new, MobCategory.MISC).sized(16.0F, 0.5F).clientTrackingRange(10).updateInterval(10).build("new_moon_attractor"));
+
+    public static final RegistryObject<EntityType<RepelAttractor>> REPEL_ATTRACTOR = ENTITY_TYPES.register("repel_attractor",
+            () -> EntityType.Builder.<RepelAttractor>of(RepelAttractor::new, MobCategory.MISC).sized(16.0F, 0.5F).clientTrackingRange(10).updateInterval(10).build("repel_attractor"));
 
     public static final RegistryObject<EntityType<ZephyrServant>> ZEPHYR_SERVANT = ENTITY_TYPES.register("zephyr_servant",
             () -> EntityType.Builder.of(ZephyrServant::new, MobCategory.MONSTER).sized(4.0F, 4.0F).clientTrackingRange(10).build("zephyr_servant"));

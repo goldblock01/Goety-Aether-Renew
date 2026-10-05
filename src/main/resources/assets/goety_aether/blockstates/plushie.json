@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "rotation=0": { "model": "goety_aether:block/plushie" },
+    "rotation=1": { "model": "goety_aether:block/plushie" },
+    "rotation=2": { "model": "goety_aether:block/plushie" },
+    "rotation=3": { "model": "goety_aether:block/plushie" },
+    "rotation=4": { "model": "goety_aether:block/plushie" },
+    "rotation=5": { "model": "goety_aether:block/plushie" },
+    "rotation=6": { "model": "goety_aether:block/plushie" },
+    "rotation=7": { "model": "goety_aether:block/plushie" },
+    "rotation=8": { "model": "goety_aether:block/plushie" },
+    "rotation=9": { "model": "goety_aether:block/plushie" },
+    "rotation=10": { "model": "goety_aether:block/plushie" },
+    "rotation=11": { "model": "goety_aether:block/plushie" },
+    "rotation=12": { "model": "goety_aether:block/plushie" },
+    "rotation=13": { "model": "goety_aether:block/plushie" },
+    "rotation=14": { "model": "goety_aether:block/plushie" },
+    "rotation=15": { "model": "goety_aether:block/plushie" }
+  }
+}

@@ -9,6 +9,7 @@ import github.goldblock.goety_aether.common.magic.spells.WindCrystalSpell;
 import github.goldblock.goety_aether.config.GoetyAetherConfig;
 import github.goldblock.goety_aether.common.entities.ally.mobs.EOTSSController;
 import github.goldblock.goety_aether.common.entities.ally.mobs.EOTSServantSegment;
+import github.goldblock.goety_aether.common.entities.ally.mobs.VenomiteServant;
 import github.goldblock.goety_aether.common.entities.projectile.WindCrystal;
 import github.goldblock.goety_aether.common.init.ModEntityTypes;
 import github.goldblock.goety_aether.common.init.ModItems;
@@ -21,6 +22,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class DeepAetherCompatManager {
     public static RegistryObject<EntityType<BabyZephyrServant>> BABY_ZEPHYR_SERVANT;
     public static RegistryObject<ServantSpawnEggItem> BABY_ZEPHYR_SERVANT_SPAWN_EGG;
+    public static RegistryObject<EntityType<VenomiteServant>> VENOMITE_SERVANT;
+    public static RegistryObject<ServantSpawnEggItem> VENOMITE_SERVANT_SPAWN_EGG;
     public static RegistryObject<EntityType<EOTSSController>> EOTSS_CONTROLLER;
     public static RegistryObject<EntityType<EOTSServantSegment>> EOTSSERVANT_SEGMENT;
     public static RegistryObject<ServantSpawnEggItem> EOTSSERVANT_SPAWN_EGG;
@@ -34,6 +37,10 @@ public class DeepAetherCompatManager {
                 () -> EntityType.Builder.of(BabyZephyrServant::new, MobCategory.MONSTER).sized(1.5F, 1.0F).clientTrackingRange(10).build("baby_zephyr_servant"));
         BABY_ZEPHYR_SERVANT_SPAWN_EGG = ModItems.ITEMS.register("baby_zephyr_servant_spawn_egg",
                 () -> new ServantSpawnEggItem(BABY_ZEPHYR_SERVANT, 0xDCE8F5, 0x8FA8C8, new Item.Properties()));
+        VENOMITE_SERVANT = ModEntityTypes.ENTITY_TYPES.register("venomite_servant",
+                () -> EntityType.Builder.of(VenomiteServant::new, MobCategory.CREATURE).sized(0.7F, 0.6F).clientTrackingRange(10).build("venomite_servant"));
+        VENOMITE_SERVANT_SPAWN_EGG = ModItems.ITEMS.register("venomite_servant_spawn_egg",
+                () -> new ServantSpawnEggItem(VENOMITE_SERVANT, 6050294, 12402238, new Item.Properties()));
         EOTSS_CONTROLLER = ModEntityTypes.ENTITY_TYPES.register("eotss_controller",
                 () -> EntityType.Builder.of(EOTSSController::new, MobCategory.MISC).sized(3.0F, 3.0F).clientTrackingRange(10).build("eotss_controller"));
         EOTSSERVANT_SEGMENT = ModEntityTypes.ENTITY_TYPES.register("eotsservant_segment",
@@ -52,6 +59,7 @@ public class DeepAetherCompatManager {
 
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(BABY_ZEPHYR_SERVANT.get(), GoetyAetherConfig.servant(GoetyAetherConfig.BABY_ZEPHYR_SERVANT_HEALTH, GoetyAetherConfig.BABY_ZEPHYR_SERVANT_DAMAGE, BabyZephyrServant.createAttributes()).build());
+        event.put(VENOMITE_SERVANT.get(), GoetyAetherConfig.servant(GoetyAetherConfig.VENOMITE_SERVANT_HEALTH, GoetyAetherConfig.VENOMITE_SERVANT_DAMAGE, VenomiteServant.setCustomAttributes()).build());
         event.put(EOTSS_CONTROLLER.get(), GoetyAetherConfig.servant(GoetyAetherConfig.EOTS_CONTROLLER_HEALTH, GoetyAetherConfig.EOTS_CONTROLLER_DAMAGE, EOTSSController.createAttributes()).build());
         event.put(EOTSSERVANT_SEGMENT.get(), GoetyAetherConfig.servant(GoetyAetherConfig.EOTS_SERVANT_SEGMENT_HEALTH, GoetyAetherConfig.EOTS_SERVANT_SEGMENT_DAMAGE, EOTSServantSegment.createAttributes()).build());
     }
