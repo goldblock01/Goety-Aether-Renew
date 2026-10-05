@@ -59,7 +59,7 @@ import java.nio.file.Path;
 public class ClientEvents {
     public static final ModelLayerLocation SENTRY_BOMB_LAYER = new ModelLayerLocation(
 
-            new ResourceLocation(GoetyAether.MOD_ID, "sentry_bomb"), "main");
+                new ResourceLocation(GoetyAether.MOD_ID, "sentry_bomb"), "main");
 
     @SubscribeEvent
     public static void clientSetup(net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent event) {
