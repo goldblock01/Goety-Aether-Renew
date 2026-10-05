@@ -35,6 +35,8 @@ import github.goldblock.goety_aether.compat.mod.AetherLostAetherCompat;
 import github.goldblock.goety_aether.compat.mod.AetherReduxCompat;
 import github.goldblock.goety_aether.compat.mod.LegendaryMonstersCompat;
 import github.goldblock.goety_aether.compat.redux.client.ReduxCompatClient;
+import com.Polarice3.Goety.client.render.block.DarkAltarRenderer;
+import com.Polarice3.Goety.client.render.block.PedestalRenderer;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -102,6 +104,8 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntityTypes.CREEPER_SERVANT.get(), CreeperServantRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.ETERNAL_NIGHT_BEACON.get(), EternalNightBeaconRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.PLUSHIE.get(), PlushieBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.PEDESTAL_HOLYSTONE.get(), PedestalRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.DARK_ALTAR_HOLYSTONE.get(), DarkAltarRenderer::new);
         if (AetherGenesisCompat.isGenesisLoaded()) {
             GenesisCompatClient.registerRenderers(event);
         }

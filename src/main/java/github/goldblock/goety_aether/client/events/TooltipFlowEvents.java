@@ -2,6 +2,7 @@ package github.goldblock.goety_aether.client.events;
 
 import github.goldblock.goety_aether.GoetyAether;
 import github.goldblock.goety_aether.client.text.GoldFlowText;
+import github.goldblock.goety_aether.common.init.ModPlushies;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.contents.TranslatableContents;
@@ -23,7 +24,21 @@ public class TooltipFlowEvents {
             List<Component> tooltip = event.getToolTip();
 
             if (isGildedItem(event.getItemStack()) && !tooltip.isEmpty()) {
-                tooltip.set(0, GoldFlowText.flowingGold(tooltip.get(0).getString()));
+                Component name = tooltip.get(0);
+                String text = name.getString();
+                String suffix = null;
+                if (text.endsWith("Plushie")) {
+                    suffix = "Plushie";
+                } else if (text.endsWith("毛绒玩偶")) {
+                    suffix = "毛绒玩偶";
+                }
+                if (suffix != null && text.length() > suffix.length()) {
+                    tooltip.set(0, Component.literal("")
+                            .append(GoldFlowText.flowingGold(text.substring(0, text.length() - suffix.length())))
+                            .append(Component.literal(suffix).withStyle(name.getStyle())));
+                } else {
+                    tooltip.set(0, GoldFlowText.flowingGold(text));
+                }
             }
 
             for (int i = 0; i < tooltip.size(); i++) {
@@ -36,7 +51,9 @@ public class TooltipFlowEvents {
     private static boolean isGildedItem(net.minecraft.world.item.ItemStack stack) {
         return stack.getItem() instanceof github.goldblock.goety_aether.common.items.divine.DivineCrownItem
                 || stack.getItem() instanceof github.goldblock.goety_aether.common.items.divine.DivineRobeItem
-                || stack.getItem() instanceof github.goldblock.goety_aether.common.items.magic.DivineStaff;
+                || stack.getItem() instanceof github.goldblock.goety_aether.common.items.magic.DivineStaff
+                || stack.getItem() == ModPlushies.GOLDEN_PLUSHIE.get().asItem()
+                || stack.getItem() == ModPlushies.YOYEYE_PLUSHIE.get().asItem();
     }
 
     private static Component gildDivine(Component component) {

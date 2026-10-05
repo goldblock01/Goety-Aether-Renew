@@ -1,0 +1,8 @@
+{
+  "parent": "goety:block/template_pedestal",
+  "render_type": "cutout",
+  "textures": {
+    "pedestal": "goety_aether:block/pedestal_holystone",
+    "particle": "aether:block/construction/holystone_bricks"
+  }
+}

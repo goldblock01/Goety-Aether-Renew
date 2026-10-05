@@ -76,6 +76,10 @@ public class ModCreativeTab {
                         placed.add(ModItems.AETHER_ACCESS_RING.get());
                         output.accept(ModBlocks.ETERNAL_NIGHT_BEACON_ITEM.get());
                         placed.add(ModBlocks.ETERNAL_NIGHT_BEACON_ITEM.get());
+                        output.accept(ModBlocks.PEDESTAL_HOLYSTONE_ITEM.get());
+                        placed.add(ModBlocks.PEDESTAL_HOLYSTONE_ITEM.get());
+                        output.accept(ModBlocks.DARK_ALTAR_HOLYSTONE_ITEM.get());
+                        placed.add(ModBlocks.DARK_ALTAR_HOLYSTONE_ITEM.get());
                         output.accept(ModItems.SENTRY_FOCUS.get());
                         placed.add(ModItems.SENTRY_FOCUS.get());
                         output.accept(ModItems.BATTLE_SENTRY_FOCUS.get());

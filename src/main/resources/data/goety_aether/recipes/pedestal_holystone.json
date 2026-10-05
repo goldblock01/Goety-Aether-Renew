@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "l",
+    "s",
+    "l"
+  ],
+  "key": {
+    "l": {
+      "item": "aether:holystone_brick_slab"
+    },
+    "s": {
+      "item": "aether:holystone_bricks"
+    }
+  },
+  "result": {
+    "item": "goety_aether:pedestal_holystone",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "goety:block/template_altar",
+  "render_type": "cutout",
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "aether:block/construction/holystone_bricks"
+  },
+  "item_render_order": [
+    "base",
+    "eyes"
+  ],
+  "children": {
+    "base": {
+      "parent": "goety:block/template_altar",
+      "textures": {
+        "altar": "goety_aether:block/dark_altar_holystone"
+      }
+    },
+    "eyes": {
+      "parent": "goety:block/template_altar",
+      "textures": {
+        "altar": "goety:block/dark_altar_activated"
+      }
+    }
+  }
+}

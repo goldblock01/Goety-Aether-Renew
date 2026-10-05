@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "goety_aether:block/dark_altar_holystone_activated" },
+    "lit=false": { "model": "goety_aether:block/dark_altar_holystone" }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "goety:block/template_altar",
+  "render_type": "cutout",
+  "textures": {
+    "altar": "goety_aether:block/dark_altar_holystone",
+    "particle": "aether:block/construction/holystone_bricks"
+  }
+}

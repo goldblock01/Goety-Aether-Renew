@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "t t",
+    "scs"
+  ],
+  "key": {
+    "t": {
+      "item": "goety:magic_emerald"
+    },
+    "s": {
+      "item": "aether:holystone_bricks"
+    },
+    "c": {
+      "tag": "goety:pedestals"
+    }
+  },
+  "result": {
+    "item": "goety_aether:dark_altar_holystone",
+    "count": 1
+  }
+}
