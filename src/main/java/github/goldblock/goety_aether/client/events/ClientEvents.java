@@ -74,7 +74,9 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntityTypes.SENTRY_SERVANT.get(), SentryServantRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.SLIDER.get(), SliderRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.VALKYRIE_SERVANT.get(), ValkyrieServantRenderer::new);
-        event.registerEntityRenderer(ModEntityTypes.COCKATRICE_SERVANT.get(), CockatriceServantRenderer::new);
+        if (!AetherReduxCompat.isReduxLoaded()) {
+            event.registerEntityRenderer(ModEntityTypes.COCKATRICE_SERVANT.get(), CockatriceServantRenderer::new);
+        }
         event.registerEntityRenderer(ModEntityTypes.SUN_SPIRIT_SERVANT.get(), SunSpiritServantRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.ZOMBIE_VALKYRIE_QUEEN_SERVANT.get(), ZombieValkyrieQueenServantRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.FIRE_MINION_SERVANT.get(), FireMinionServantRenderer::new);

@@ -10,6 +10,8 @@ import com.Polarice3.Goety.utils.MobUtil;
 import com.aetherteam.aether.client.AetherSoundEvents;
 import com.aetherteam.aether.entity.monster.Swet;
 import github.goldblock.goety_aether.GoetyAether;
+import github.goldblock.goety_aether.compat.mod.AetherReduxCompat;
+import github.goldblock.goety_aether.compat.redux.ReduxSwetBridge;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -40,7 +42,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.scores.Team;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
-import net.zepalesque.redux.capability.ReduxCapabilities;
 
 import javax.annotation.Nullable;
 import java.util.EnumSet;
@@ -172,7 +173,7 @@ public abstract class AbstractSwetServant extends Swet implements IServant, Owna
 
     @Override
     public <T> LazyOptional<T> getCapability(Capability<T> cap, @Nullable Direction side) {
-        if (cap == ReduxCapabilities.SWET_MASS) {
+        if (AetherReduxCompat.isReduxLoaded() && ReduxSwetBridge.isSwetMass(cap)) {
             return LazyOptional.empty();
         }
         return super.getCapability(cap, side);

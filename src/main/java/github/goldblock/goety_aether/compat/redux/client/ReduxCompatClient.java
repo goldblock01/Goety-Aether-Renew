@@ -10,6 +10,7 @@ public class ReduxCompatClient {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ReduxCompatManager.VANILLA_SWET_SERVANT.get(), VanillaSwetServantRenderer::new);
         event.registerEntityRenderer(ReduxCompatManager.BLIGHTBUNNY_SERVANT.get(), BlightbunnyServantRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.COCKATRICE_SERVANT.get(), ReduxCockatriceServantRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.PASSIVE_WHIRLWIND_SERVANT.get(), ReduxWhirlwindServantRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.EVIL_WHIRLWIND_SERVANT.get(), ReduxWhirlwindServantRenderer::new);
     }
