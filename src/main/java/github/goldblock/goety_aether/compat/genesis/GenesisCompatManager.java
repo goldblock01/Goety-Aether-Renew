@@ -13,7 +13,10 @@ import github.goldblock.goety_aether.common.entities.ally.mobs.TempestServant;
 import github.goldblock.goety_aether.common.entities.ally.mobs.TrackingGolem;
 import github.goldblock.goety_aether.common.init.ModEntityTypes;
 import github.goldblock.goety_aether.common.init.ModItems;
+import github.goldblock.goety_aether.common.magic.spells.BattleSentryFocusSpell;
+import github.goldblock.goety_aether.common.magic.spells.SentryGolemFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.TempestFocusSpell;
+import github.goldblock.goety_aether.common.magic.spells.TrackingGolemFocusSpell;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
@@ -35,6 +38,9 @@ public class GenesisCompatManager {
     public static RegistryObject<ServantSpawnEggItem> TEMPEST_SERVANT_SPAWN_EGG;
     public static RegistryObject<EntityType<TempestThunderBall>> TEMPEST_THUNDERBALL;
     public static RegistryObject<Item> TEMPEST_FOCUS;
+    public static RegistryObject<MagicFocus> BATTLE_SENTRY_FOCUS;
+    public static RegistryObject<MagicFocus> TRACKING_GOLEM_FOCUS;
+    public static RegistryObject<MagicFocus> SENTRY_GOLEM_FOCUS;
 
     public static void init() {
         BATTLE_SENTRY_SERVANT = ModEntityTypes.ENTITY_TYPES.register("battle_sentry_servant",
@@ -65,6 +71,12 @@ public class GenesisCompatManager {
                 () -> EntityType.Builder.<TempestThunderBall>of(TempestThunderBall::new, MobCategory.MISC).sized(0.5F, 0.5F).clientTrackingRange(4).updateInterval(10).build("tempest_thunderball"));
         TEMPEST_FOCUS = ModItems.ITEMS.register("tempest_focus",
                 () -> new MagicFocus(new TempestFocusSpell()));
+        BATTLE_SENTRY_FOCUS = ModItems.ITEMS.register("battle_sentry_focus",
+                () -> new MagicFocus(new BattleSentryFocusSpell()));
+        TRACKING_GOLEM_FOCUS = ModItems.ITEMS.register("tracking_golem_focus",
+                () -> new MagicFocus(new TrackingGolemFocusSpell()));
+        SENTRY_GOLEM_FOCUS = ModItems.ITEMS.register("sentry_golem_focus",
+                () -> new MagicFocus(new SentryGolemFocusSpell()));
     }
 
     public static void registerAttributes(EntityAttributeCreationEvent event) {

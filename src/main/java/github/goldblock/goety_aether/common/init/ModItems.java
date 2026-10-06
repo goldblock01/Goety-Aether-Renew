@@ -12,17 +12,14 @@ import github.goldblock.goety_aether.common.items.revive.ReviveServantItem;
 import github.goldblock.goety_aether.common.items.revive.SwollenSun;
 import github.goldblock.goety_aether.common.items.magic.DivineStaff;
 import github.goldblock.goety_aether.common.items.divine.DivineRobeItem;
-import github.goldblock.goety_aether.common.magic.spells.BattleSentryFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.FireCrystalFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.IceCrystalFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.PickaxeAttackSpell;
 import github.goldblock.goety_aether.common.magic.spells.PoisonDartRainSpell;
 import github.goldblock.goety_aether.common.magic.spells.SentryFocusSpell;
-import github.goldblock.goety_aether.common.magic.spells.SentryGolemFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.SkyWolfFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.SolarFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.ThunderCrystalSpell;
-import github.goldblock.goety_aether.common.magic.spells.TrackingGolemFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.CockatriceFocusSpell;
 import github.goldblock.goety_aether.common.magic.spells.DivineFavorSpell;
 import github.goldblock.goety_aether.common.magic.spells.LevitationSpell;
@@ -43,15 +40,6 @@ public class ModItems {
 
     public static final RegistryObject<MagicFocus> SENTRY_FOCUS = ITEMS.register("sentry_focus",
             () -> new MagicFocus(new SentryFocusSpell()));
-
-    public static final RegistryObject<MagicFocus> BATTLE_SENTRY_FOCUS = ITEMS.register("battle_sentry_focus",
-            () -> new MagicFocus(new BattleSentryFocusSpell()));
-
-    public static final RegistryObject<MagicFocus> TRACKING_GOLEM_FOCUS = ITEMS.register("tracking_golem_focus",
-            () -> new MagicFocus(new TrackingGolemFocusSpell()));
-
-    public static final RegistryObject<MagicFocus> SENTRY_GOLEM_FOCUS = ITEMS.register("sentry_golem_focus",
-            () -> new MagicFocus(new SentryGolemFocusSpell()));
 
     public static final RegistryObject<MagicFocus> PICKAXE_ATTACK_FOCUS = ITEMS.register("pickaxe_attack_focus",
             () -> new MagicFocus(new PickaxeAttackSpell()));

@@ -82,12 +82,18 @@ public class ModCreativeTab {
                         placed.add(ModBlocks.DARK_ALTAR_HOLYSTONE_ITEM.get());
                         output.accept(ModItems.SENTRY_FOCUS.get());
                         placed.add(ModItems.SENTRY_FOCUS.get());
-                        output.accept(ModItems.BATTLE_SENTRY_FOCUS.get());
-                        placed.add(ModItems.BATTLE_SENTRY_FOCUS.get());
-                        output.accept(ModItems.TRACKING_GOLEM_FOCUS.get());
-                        placed.add(ModItems.TRACKING_GOLEM_FOCUS.get());
-                        output.accept(ModItems.SENTRY_GOLEM_FOCUS.get());
-                        placed.add(ModItems.SENTRY_GOLEM_FOCUS.get());
+                        if (GenesisCompatManager.BATTLE_SENTRY_FOCUS != null && GenesisCompatManager.BATTLE_SENTRY_FOCUS.isPresent()) {
+                            output.accept(GenesisCompatManager.BATTLE_SENTRY_FOCUS.get());
+                            placed.add(GenesisCompatManager.BATTLE_SENTRY_FOCUS.get());
+                        }
+                        if (GenesisCompatManager.TRACKING_GOLEM_FOCUS != null && GenesisCompatManager.TRACKING_GOLEM_FOCUS.isPresent()) {
+                            output.accept(GenesisCompatManager.TRACKING_GOLEM_FOCUS.get());
+                            placed.add(GenesisCompatManager.TRACKING_GOLEM_FOCUS.get());
+                        }
+                        if (GenesisCompatManager.SENTRY_GOLEM_FOCUS != null && GenesisCompatManager.SENTRY_GOLEM_FOCUS.isPresent()) {
+                            output.accept(GenesisCompatManager.SENTRY_GOLEM_FOCUS.get());
+                            placed.add(GenesisCompatManager.SENTRY_GOLEM_FOCUS.get());
+                        }
                         output.accept(ModItems.PICKAXE_ATTACK_FOCUS.get());
                         placed.add(ModItems.PICKAXE_ATTACK_FOCUS.get());
                         if (DeepAetherCompatManager.BABY_ZEPHYR_FOCUS != null && DeepAetherCompatManager.BABY_ZEPHYR_FOCUS.isPresent()) {

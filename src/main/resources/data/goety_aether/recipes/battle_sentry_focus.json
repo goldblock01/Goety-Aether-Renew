@@ -33,5 +33,11 @@
     }
   ],
   "soulCost": 1,
-  "duration": 10
+  "duration": 10,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aether_genesis"
+    }
+  ]
 }
