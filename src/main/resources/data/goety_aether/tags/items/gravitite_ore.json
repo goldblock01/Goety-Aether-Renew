@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "aether:gravitite_ore",
+    {
+      "id": "aether_redux:raw_gravitite",
+      "required": false
+    }
+  ]
+}

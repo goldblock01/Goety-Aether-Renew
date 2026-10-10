@@ -11,13 +11,13 @@
   },
   "ingredients": [
     {
-      "item": "aether_redux:gravitite_ingot"
+      "tag": "goety_aether:gravitite"
     },
     {
       "item": "aether:gravitite_sword"
     },
     {
-      "item": "aether_redux:raw_gravitite"
+      "tag": "goety_aether:gravitite_ore"
     },
     {
       "item": "goety:ectoplasm"
