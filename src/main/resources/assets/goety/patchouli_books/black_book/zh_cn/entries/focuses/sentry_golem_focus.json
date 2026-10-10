@@ -2,5 +2,6 @@
   "name": "哨卫聚晶",
   "icon": "goety_aether:sentry_golem_focus",
   "category": "goety:goety_aether/focuses",
-  "pages": []
+  "pages": [],
+  "flag": "mod:aether_genesis"
 }

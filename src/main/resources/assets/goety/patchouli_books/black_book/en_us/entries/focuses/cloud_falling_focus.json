@@ -2,5 +2,6 @@
   "name": "Cloud Falling Focus",
   "icon": "goety_aether:cloud_falling_focus",
   "category": "goety:goety_aether/focuses",
-  "pages": []
+  "pages": [],
+  "flag": "mod:legendary_monsters"
 }
